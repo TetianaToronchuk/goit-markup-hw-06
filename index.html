@@ -19,9 +19,9 @@
 <body>
   <!-- HEADER -->
   <header class="page-header">
-    <div class="container">
+    <div class="header-container">
       <nav class="header-nav">
-        <a class="header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
+        <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
         <ul class="nav-list">
           <li><a class="nav-link current" href="./index.html">Studio</a></li>
           <li><a class="nav-link" href="">Portfolio</a></li>
@@ -34,20 +34,53 @@
           <li><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+      <button class="burger-btn" type="button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
+
+<!-- MOBILE -->
+
+    <div class="mobile-menu">
+    <div class="mobile-menu-container">
+
+      <button class="mobile-menu-close" type="button" close>
+       <svg class="close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-18dp-2-1"></use>
+      </svg> 
+      </button>
+      
+      <nav class="mobil-menu-nav">navigation</nav>
+      <ul class="mobil-nav-list">
+          <li><a class="mobil-nav-link current" href="./index.html">Studio</a></li>
+          <li><a class="mobil-nav-link" href="">Portfolio</a></li>
+          <li><a class="mobil-nav-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobil-contacts">
+        <ul class="mobil-contacts-list">
+          <li><a class="mobil-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="mobil-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address>
+    </div>
+   </div>
   </header>
  
-  <main>
+  <!-- <main> -->
     <!-- first section HERO -->
 
     <section class="hero-section section"> 
-      <div class="container">
+      <div class="hero-container">
     <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <button class="hero-button" type="button" data-model-open>Order Service</button>
       </div>
     </section>
 
-  <!-- second section-->
+  <!-- second section -->
 
   <section class="features-section section">
     <div class="container">
@@ -104,6 +137,7 @@
 </section>
   
 <!-- third section -->
+
   <section class="team-section">
     <div class="container">
       <h2 class="section-title">Our Team</h2>
@@ -262,9 +296,10 @@
   </li>
   </ul>
   </div>
-  </section>
+  </section> 
 
   <!-- fourth section -->
+
   <section class="portfolio-section section">
     <div class="container">
       <h2 class="section-title">Our Portfolio</h2>
@@ -363,9 +398,10 @@
       </ul>
     </div>
   </section>
-  
+   
   </main>
-  <!-- footer -->
+   <!-- footer -->
+
 <footer class="page-footer">
      <div class="container footer-container"> 
       <div class="footer-brand">
@@ -426,7 +462,7 @@
     </div>
 </footer>
 
-<!-- <----BACKDROP----> 
+  <!-- ----BACKDROP--  -->
 
   <div class="backdrop is-open" data-modal>
       <div class="modal">
@@ -438,7 +474,9 @@
     </button>
     <p class="modal-title">Leave your contacts and we will call you back</p>
     <form class="modal-form">
-<!-- NAME -->
+
+NAME
+
         <div class="form-field">
         <label class="form-label" for="user-name">Name</label>
         <div class="input-wrapper">
@@ -450,7 +488,8 @@
         </div>
         </div>
       
-<!-- PHONE -->
+PHONE
+
        <div class="form-field">
         <label for="user-phone" class="form-label">Phone</label>
         <div class="input-wrapper">
@@ -462,7 +501,8 @@
         </div>
        </div>
       
-      <!-- EMAIL -->
+      EMAIL
+
       <div class="form-field">
         <label for="user-email" class="form-label">Email</label>
         <div class="input-wrapper">
@@ -473,16 +513,19 @@
       </svg>
         </div>
       </div>
-<!-- Comment -->
+
+Comment
+
     <div class="form-field comment-field">
-     <label class="form-label" for="user-comment">
+     <label class="comment-form-label" for="user-comment">
       Comment</label>
       <textarea class="comment-textarea" id="user-comment"
        name="user-comment" placeholder="Text input">
       </textarea>
     </div>
 
-    <!-- CHECKBOX -->
+    CHECKBOX
+
   <div class="checkbox-container">
   <input class="checkbox-input visually-hidden" type="checkbox"
     id="user-privacy" name="user-privacy" value="true" required />
@@ -501,5 +544,6 @@
   </form>
  </div>
   </div>
+  <script src="./js/modal.js"></script> 
   </body>
 </html>
